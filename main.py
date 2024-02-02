@@ -61,10 +61,14 @@ with open('data.csv', 'w') as file:
     file.write(columns)
     file.write(data)
 
-# Predict Risk using pretrained AI model with a SINGLE sample
-# (example seems to be in Sahidul's evaluate() function)
+# Predict Risk using pretrained AI model with a SINGLE sample (example seems to be in Sahidul's evaluate() function)
 device = 'cpu'
-net = torch.load('saved_models/Safety_net_0.pkl')
-net = net.float().to(device)
-net.eval() # -> eval method from parent of model class nn.Module?
-outputs_test = net(data)
+# load pretrained model
+net = torch.load('Safety_net_0.pkl')
+net = net.float().to(device) # tells pytorch whether to use CPU or GPU. Use CPU
+# put model in eval mode (there are different modes: train, eval (test model), etc...)
+net.eval() 
+# pass input data into model and receive output prediction(s)
+outputs_test = net(data) # input data should be a TENSOR
+
+# output should be 6 tensors: risky, fatal, or not injured.....
