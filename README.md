@@ -7,3 +7,5 @@ Repository for implementation of RasPi 4, 64 bit with a light sensor and sense H
 <a href="https://ieeexplore.ieee.org/abstract/document/10528772/?casa_token=aLlI5imtCH8AAAAA:_thpHsLX-TnyXqvmGz4vzjsE6bHn67dfGDGUeso-Fxw6wB7JdCUmQ6LCJ6zLokakQ_LX1_Kknw">IEEE Published Paper</a>
 
 <a href="https://docs.google.com/document/d/1hojn8fiqz7EmiSIzCiiO8L0OZve56C2E/edit?usp=sharing&ouid=118105925173542283355&rtpof=true&sd=true">Documentation</a>
+
+<a href="https://github.com/jamy54/RoadSafety">Deep Learning Model</a>
